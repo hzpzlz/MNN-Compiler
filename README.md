@@ -10,46 +10,46 @@
     ./autogen.sh
 - 指定安装路径
 ```
-    ./configure --prefix=/usr/local/protobuf
-    make
-    sudo make install
+./configure --prefix=/usr/local/protobuf
+make
+sudo make install
 ```
 - 配置环境变量
 ```
-    vi /etc/profile
+vi /etc/profile
 ```
 - 在最后一行添加：
 ```
-    export PATH=$PATH:/usr/local/protobuf/bin/
-    export PKG_CONFIG_PATH=/usr/local/protobuf/lib/pkgconfig/
+export PATH=$PATH:/usr/local/protobuf/bin/
+export PKG_CONFIG_PATH=/usr/local/protobuf/lib/pkgconfig/
 ```
 - 配置动态库
 ```
-    sudo vim /etc/ld.so.conf
+sudo vim /etc/ld.so.conf
 ```
 - 添加：
 ```     
-    /usr/local/protobuf/lib
+/usr/local/protobuf/lib
 ```
 - 执行
 ```
-    sudo ldconfig
+sudo ldconfig
 ```
 ### 7 查看版本：3.15.6
     protoc --version
 ### 8 修改CMakeLists.txt文件
 - 在include_directories中，第298行添加 
 ```
-    /usr/local/protobuf/include
+/usr/local/protobuf/include
 ```
 - 拷贝缺失的文件
 - /usr/lib/x86_64-linux-gnu目录下执行
 ```
-    sudo cp /usr/local/protobuf/lib/libprotobuf.so ./
+sudo cp /usr/local/protobuf/lib/libprotobuf.so ./
 ```
 - /usr/bin目录下执行
 ```
-    cp /usr/local/protobuf/bin/protoc ./
+cp /usr/local/protobuf/bin/protoc ./
 ```
 ### 9 编译流程
     cd MNN

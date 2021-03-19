@@ -7,7 +7,8 @@
 ## 一 重装protobuf
 ### 1 首先卸载掉原来linux系统中的libprotobuf-dev protobuf-compiler、pip uninstall protobuf
     sudo apt-get autoremove libprotobuf-dev protobuf-compiler
-### 2 下载protocbuf源码：https://github.com/protocolbuffers/protobuf/releases/tag/v3.15.6 下载Source code(tar.gz)
+### 2 下载protocbuf源码：https://github.com/protocolbuffers/protobuf/releases/tag/v3.15.6 
+### 下载Source code(tar.gz)
 ### 3 执行代码产生configure文件
     ./autogen.sh
 - 指定安装路径

@@ -1,4 +1,4 @@
-# MNN-Compile
+# MNN-Compiler
 ## MNN编译采坑流程--Linux
 ## 环境要求
 - cmake（建议使用3.10或以上版本）

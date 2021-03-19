@@ -1,7 +1,7 @@
 # MNN-Compile
 ## MNN编译采坑流程--Linux
 ## 环境要求
-- cmake（建议使用3.10或以上版本）、
+- cmake（建议使用3.10或以上版本）
 - protobuf（使用3.0或以上版本）
 - gcc（使用4.9或以上版本）
 ## 一 重装protobuf

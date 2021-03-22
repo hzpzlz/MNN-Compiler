@@ -57,6 +57,7 @@ sudo cp /usr/local/protobuf/lib/libprotobuf.so ./
 ```
 cp /usr/local/protobuf/bin/protoc ./
 ```
+- 如果要使用其他工具，在49行-75行将相应的开关打开即可
 ### 3 编译流程
     cd MNN
     ./schema/generate.sh
